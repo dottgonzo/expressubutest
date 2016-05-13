@@ -1,0 +1,7 @@
+version '2'
+service:
+app:
+ image:dottgonzo/ubunodedocker
+ command:"git clone https://github.com/sequelize/express-example.git . && npm i --production && npm start"
+ ports:
+ - 3333:3333
