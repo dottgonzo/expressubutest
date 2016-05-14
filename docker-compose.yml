@@ -9,6 +9,6 @@ services:
    
  app1:
   image: dottgonzo/mininode
-  command: '/bin/sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && forever index.js"'
+  command: '/bin/sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && forever start index.js"'
   ports:
    - 4000:3000
