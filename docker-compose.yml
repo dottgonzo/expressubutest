@@ -3,12 +3,12 @@ version: '2'
 services:
  app0:
   image: dottgonzo/ubunodedocker
-  command: 'sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && forever start"'
+  command: '/bin/sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && forever start"'
   ports:
    - 3000:3000
    
  app1:
   image: dottgonzo/mininode
-  command: 'sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && forever start"'
+  command: '/bin/sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && forever start"'
   ports:
    - 4000:3000
