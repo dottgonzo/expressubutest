@@ -20,7 +20,7 @@ services:
   restart: always
   command: '/bin/sh -c "rm -rf /usr/local/apache2/htdocs/public-html && sync && git clone https://github.com/sequelize/express-example.git /usr/local/apache2/htdocs/public-html && chmod 777 -R /usr/local/apache2/htdocs/public-html && /bin/sh"'
   ports:
-   - 8000:80
+   - 4100:80
   tty: true
    
    
