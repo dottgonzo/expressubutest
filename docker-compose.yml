@@ -21,6 +21,7 @@ services:
   command: '/bin/sh -c "rm -rf /usr/local/apache2/htdocs/public-html && sync && git clone https://github.com/sequelize/express-example.git /usr/local/apache2/htdocs/public-html"'
   ports:
    - 8000:80
+  tty: true
    
    
    
