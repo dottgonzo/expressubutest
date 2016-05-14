@@ -18,7 +18,7 @@ services:
  app2:
   image: dottgonzo/httpdgitdocker
   restart: always
-  command: '/bin/sh -c "rm -rf /usr/local/apache2/htdocs/public-html && sync && git clone https://github.com/sequelize/express-example.git /usr/local/apache2/htdocs/public-html&&httpd"'
+  command: '/bin/sh -c "rm -rf /usr/local/apache2/htdocs/public-html && sync && git clone https://github.com/sequelize/express-example.git /usr/local/apache2/htdocs/public-html&&httpd-foreground"'
   ports:
    - 8000:80
 
