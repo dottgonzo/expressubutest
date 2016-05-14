@@ -3,14 +3,14 @@ version: '2'
 services:
  app0:
   image: dottgonzo/ubunodedocker
-  restart: on-failure
-  command: '/bin/sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && npm start"'
+  restart: always
+  command: '/bin/sh -c "rm -rf . && git clone https://github.com/sequelize/express-example.git . && npm i --production && npm start"'
   ports:
    - 3000:3000
    
  app1:
   image: dottgonzo/mininode
-  restart: on-failure
-  command: '/bin/sh -c "git clone https://github.com/sequelize/express-example.git . && npm i --production && npm start"'
+  restart: always
+  command: '/bin/sh -c "rm -rf . && git clone https://github.com/sequelize/express-example.git . && npm i --production && npm start"'
   ports:
    - 4000:3000
